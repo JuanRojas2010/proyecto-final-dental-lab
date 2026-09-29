@@ -1,0 +1,37 @@
+{
+    "incisivo": {
+        "nombre": "Incisivo",
+        "imagen": "imagenes/incisivo(1).png",
+        "descripcion": "Los incisivos son los dientes ubicados en la parte frontal de la boca. Tienen una forma relativamente plana y están diseñados principalmente para cortar los alimentos.",
+        "funcion": "Cortar los alimentos",
+        "ubicacion": "Parte frontal de la boca",
+        "cantidad": "8 dientes"
+    },
+
+    "canino": {
+        "nombre": "Canino",
+        "imagen": "imagenes/canino(1).png",
+        "descripcion": "Los caninos son dientes puntiagudos ubicados entre los incisivos y los premolares. Ayudan principalmente a desgarrar los alimentos.",
+        "funcion": "Desgarrar los alimentos",
+        "ubicacion": "Entre incisivos y premolares",
+        "cantidad": "4 dientes"
+    },
+
+    "premolar": {
+        "nombre": "Premolar",
+        "imagen": "imagenes/premolar(1).png",
+        "descripcion": "Los premolares se encuentran detrás de los caninos. Poseen una superficie que permite triturar y aplastar los alimentos.",
+        "funcion": "Triturar y aplastar",
+        "ubicacion": "Entre caninos y molares",
+        "cantidad": "8 dientes"
+    },
+
+    "molar": {
+        "nombre": "Molar",
+        "imagen": "imagenes/molar(1).png",
+        "descripcion": "Los molares son los dientes posteriores de la boca. Son grandes y tienen una superficie amplia que permite triturar los alimentos.",
+        "funcion": "Triturar los alimentos",
+        "ubicacion": "Parte posterior de la boca",
+        "cantidad": "12 dientes"
+    }
+}

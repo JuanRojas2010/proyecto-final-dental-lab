@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #e8f8ff, #ffffff);
+    min-height: 100vh;
+    color: #243746;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+header h1 {
+    font-size: 36px;
+    color: #1677a8;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #607d8b;
+    font-size: 17px;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+main {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 35px;
+    width: 95%;
+    max-width: 1400px;
+    margin: 40px auto;
+    align-items: start;
+}
+
+
+/* PANEL INFORMACIÓN */
+
+.informacion {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    text-align: center;
+    position: sticky;
+    top: 20px;
+}
+
+.informacion h2 {
+    color: #1677a8;
+    margin-bottom: 20px;
+}
+
+.imagen-info {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.imagen-info img {
+    max-width: 150px;
+    max-height: 210px;
+    object-fit: contain;
+}
+
+#nombreDiente {
+    font-size: 25px;
+    color: #1594c2;
+    margin: 10px 0;
+}
+
+#descripcionDiente {
+    color: #607d8b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* DATOS */
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.datos div {
+    background: #eef9fd;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.datos strong {
+    color: #1677a8;
+}
+
+.datos span {
+    color: #455a64;
+}
+
+
+/* SIMULADOR */
+
+.boca-container {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+}
+
+.boca-container h2 {
+    text-align: center;
+    color: #1677a8;
+    margin-bottom: 25px;
+}
+
+
+/* BOCA */
+
+.boca {
+    background: #ffe9ee;
+    border-radius: 50%;
+    padding: 35px;
+    min-height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    box-shadow:
+        inset 0 0 40px rgba(180,70,90,0.18);
+}
+
+
+/* ARCADA */
+
+.arcada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+
+/* DIENTES */
+
+.diente {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    width: 70px;
+    height: 145px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        transform 0.25s ease,
+        filter 0.25s ease;
+}
+
+.diente img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.diente:hover {
+    transform: scale(1.18);
+    filter: drop-shadow(0 5px 8px rgba(0,0,0,0.25));
+}
+
+
+/* DIENTE SELECCIONADO */
+
+.diente.seleccionado {
+    transform: scale(1.25);
+    filter:
+        drop-shadow(0 0 8px #00a6d6)
+        drop-shadow(0 5px 8px rgba(0,0,0,0.25));
+}
+
+
+/* ARCADA SUPERIOR */
+
+.superior .diente {
+    transform: rotate(180deg);
+}
+
+.superior .diente:hover {
+    transform: rotate(180deg) scale(1.18);
+}
+
+.superior .diente.seleccionado {
+    transform: rotate(180deg) scale(1.25);
+}
+
+
+/* ESPACIO */
+
+.espacio-boca {
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #c25b72;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .informacion {
+        position: relative;
+        top: 0;
+    }
+
+    .boca {
+        overflow-x: auto;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 98%;
+        margin: 20px auto;
+    }
+
+    .boca {
+        padding: 20px;
+        min-height: 500px;
+    }
+
+    .arcada {
+        min-width: 850px;
+    }
+
+    .diente {
+        width: 60px;
+        height: 120px;
+    }
+}

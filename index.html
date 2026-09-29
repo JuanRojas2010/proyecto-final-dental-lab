@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simulador de la Boca</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <div class="logo">🦷</div>
+
+        <div>
+            <h1>Simulador de la Boca</h1>
+            <p>Explora los diferentes tipos de dientes</p>
+        </div>
+    </header>
+
+
+    <!-- ================= CONTENIDO ================= -->
+
+    <main>
+
+        <!-- ================= INFORMACIÓN ================= -->
+
+        <section class="informacion">
+
+            <h2 id="tituloDiente">Selecciona un diente</h2>
+
+            <div class="imagen-info">
+
+                <img id="imagenDiente"
+                     src=""
+                     alt="Diente seleccionado">
+
+            </div>
+
+            <h3 id="nombreDiente">Diente</h3>
+
+            <p id="descripcionDiente">
+                Haz clic sobre uno de los dientes para conocer
+                sus características.
+            </p>
+
+
+            <!-- DATOS -->
+
+            <div class="datos">
+
+                <div class="dato">
+                    <div class="icono">⚙️</div>
+
+                    <div>
+                        <strong>Función</strong>
+                        <span id="funcionDiente">---</span>
+                    </div>
+                </div>
+
+
+                <div class="dato">
+                    <div class="icono">📍</div>
+
+                    <div>
+                        <strong>Ubicación</strong>
+                        <span id="ubicacionDiente">---</span>
+                    </div>
+                </div>
+
+
+                <div class="dato">
+                    <div class="icono">🦷</div>
+
+                    <div>
+                        <strong>Cantidad</strong>
+                        <span id="cantidadDiente">---</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= BOCA ================= -->
+
+        <section class="boca-container">
+
+            <div class="titulo-boca">
+                <h2>Arcada dental</h2>
+
+                <span>
+                    Haz clic en cualquier diente
+                </span>
+            </div>
+
+
+            <!-- BOCA REALISTA -->
+
+            <div class="boca">
+
+                <!-- LABIO SUPERIOR -->
+
+                <div class="labio-superior"></div>
+
+
+                <!-- INTERIOR DE LA BOCA -->
+
+                <div class="interior-boca">
+
+
+                    <!-- ================= ARCADA SUPERIOR ================= -->
+
+                    <div class="arcada superior">
+
+
+                        <!-- 1 -->
+
+                        <button class="diente incisivo"
+                                data-diente="incisivo">
+
+                            <img src="imagenes/incisivo-removebg-preview.png"
+                                 alt="Incisivo superior">
+
+                        </button>
+
+
+                        <!-- 2 -->
+
+                        <button class="diente incisivo"
+                                data-diente="incisivo">
+
+                            <img src="imagenes/incisivo-removebg-preview.png"
+                                 alt="Incisivo superior">
+
+                        </button>
+
+
+                        <!-- 3 -->
+
+                        <button class="diente incisivo"
+                                data-diente="incisivo">
+
+                            <img src="imagenes/incisivo-removebg-preview.png"
+                                 alt="Incisivo superior">
+
+                        </button>
+
+
+                        <!-- 4 -->
+
+                        <button class="diente incisivo"
+                                data-diente="incisivo">
+
+                            <img src="imagenes/incisivo-removebg-preview.png"
+                                 alt="Incisivo superior">
+
+                        </button>
+
+
+                        <!-- 5 -->
+
+                        <button class="diente canino"
+                                data-diente="canino">
+
+                            <img src="imagenes/canino-removebg-preview.png"
+                                 alt="Canino superior">
+
+                        </button>
+
+
+                        <!-- 6 -->
+
+                        <button class="diente premolar"
+                                data-diente="premolar">
+
+                            <img src="imagenes/premolar-removebg-preview.png"
+                                 alt="Primer premolar superior">
+
+                        </button>
+
+
+                        <!-- 7 -->
+
+                        <button class="diente premolar"
+                                data-diente="premolar">
+
+                            <img src="imagenes/premolar-removebg-preview.png"
+                                 alt="Segundo premolar superior">
+
+                        </button>
+
+
+                        <!-- 8 -->
+
+                        <button class="diente molar"
+                                data-diente="molar">
+
+                            <img src="imagenes/molar-removebg-preview.png"
+                                 alt="Primer molar superior">
+
+                        </button>
+
+
+                        <!-- 9 -->
+
+                        <button class="diente molar"
+                                data-diente="molar">
+
+                            <img src="imagenes/molar-removebg-preview.png"
+                                 alt="Segundo molar superior">
+
+                        </button>
+
+
+                        <!-- 10 -->
+
+                        <button class="diente molar"
+                                data-diente="molar">
+
+                            <img src="imagenes/molar-removebg-preview.png"
+                                 alt="Tercer molar superior">
+
+                        </button>
+
+
+                        <!-- 11 -->
+
+                        <button class="diente premolar"
+                                data-diente="premolar">
+
+                            <img src="imagenes/premolar-removebg-preview.png"
+                                 alt="Segundo premolar superior">
+
+                        </button>
+
+
+                        <!-- 12 -->
+
+                        <button class="diente premolar"
+                                data-diente="premolar">
+
+                            <img src="imagenes/premolar-removebg-preview.png"
+                                 alt="Primer premolar superior">
+
+                        </button>
+
+
+                        <!-- 13 -->
+
+                        <button class="diente canino"
+                                data-diente="canino">
+
+                            <img src="imagenes/canino-removebg-preview.png"
+                                 alt="Canino superior">
+
+                        </button>
+
+
+                        <!-- 14 -->
+
+                        <button class="diente incisivo"
+                                data-diente="incisivo">
+
+                            <img src="imagenes/incisivo-removebg-preview.png"
+                                 alt="Incisivo superior">
+
+                        </button>
+
+
+                        <!-- 15 -->
+
+                        <button class="diente incisivo"
+                                data-diente="incisivo">
+
+                            <img src="imagenes/incisivo-removebg-preview.png"
+                                 alt="Incisivo superior">
+
+                        </button>
+
+
+                        <!-- 16 -->
+
+                        <button class="diente incisivo"
+                                data-diente="incisivo">
+
+                            <img src="imagenes/incisivo-removebg-preview.png"
+                                 alt="Incisivo superior">
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- ================= LENGUA ================= -->
+
+                    <div class="lengua">
+
+                        <div class="lengua-linea"></div>
+
+                        <span>Lengua</span>
+
+                    </div>
+
+
+
+                    <!-- ================= ARCADA INFERIOR ================= -->
+
+                    <div class="arcada inferior">
+
+
+                        <!-- 1 -->
+
+                        <button class="diente molar"
+                                data-diente="molar">
+
+                            <img src="imagenes/molar-removebg-preview.png"
+                                 alt="Molar inferior">
+
+                        </button>
+
+
+                        <!-- 2 -->
+
+                        <button class="diente molar"
+                                data-diente="molar">
+
+                            <img src="imagenes/molar-removebg-preview.png"
+                                 alt="Molar inferior">
+
+                        </button>
+
+
+                        <!-- 3 -->
+
+                        <button class="diente molar"
+                                data-diente="molar">
+
+                            <img src="imagenes/molar-removebg-preview.png"
+                                 alt="Molar inferior">
+
+                        </button>
+
+
+                        <!-- 4 -->
+
+                        <button class="diente premolar"
+                                data-diente="premolar">
+
+                            <img src="imagenes/premolar-removebg-preview.png"
+                                 alt="Premolar inferior">
+
+                        </button>
+
+
+                        <!-- 5 -->
+
+                        <button class="diente premolar"
+                                data-diente="premolar">
+
+                            <img src="imagenes/premolar-removebg-preview.png"
+                                 alt="Premolar inferior">
+
+                        </button>
+
+
+                        <!-- 6 -->
+
+                        <button class="diente canino"
+                                data-diente="canino">
+
+                            <img src="imagenes/canino-removebg-preview.png"
+                                 alt="Canino inferior">
+
+                        </button>
+
+
+                        <!-- 7 -->
+
+                        <button class="diente incisivo"
+                                data-diente="incisivo">
+
+                            <img src="imagenes/incisivo-removebg-preview.png"
+                                 alt="Incisivo inferior">
+
+                        </button>
+
+
+                        <!-- 8 -->
+
+                        <button class="diente incisivo"
+                                data-diente="incisivo">
+
+                            <img src="imagenes/incisivo-removebg-preview.png"
+                                 alt="Incisivo inferior">
+
+                        </button>
+
+
+                        <!-- 9 -->
+
+                        <button class="diente incisivo"
+                                data-diente="incisivo">
+
+                            <img src="imagenes/incisivo-removebg-preview.png"
+                                 alt="Incisivo inferior">
+
+                        </button>
+
+
+                        <!-- 10 -->
+
+                        <button class="diente incisivo"
+                                data-diente="incisivo">
+
+                            <img src="imagenes/incisivo-removebg-preview.png"
+                                 alt="Incisivo inferior">
+
+                        </button>
+
+
+                        <!-- 11 -->
+
+                        <button class="diente canino"
+                                data-diente="canino">
+
+                            <img src="imagenes/canino-removebg-preview.png"
+                                 alt="Canino inferior">
+
+                        </button>
+
+
+                        <!-- 12 -->
+
+                        <button class="diente premolar"
+                                data-diente="premolar">
+
+                            <img src="imagenes/premolar-removebg-preview.png"
+                                 alt="Premolar inferior">
+
+                        </button>
+
+
+                        <!-- 13 -->
+
+                        <button class="diente premolar"
+                                data-diente="premolar">
+
+                            <img src="imagenes/premolar-removebg-preview.png"
+                                 alt="Premolar inferior">
+
+                        </button>
+
+
+                        <!-- 14 -->
+
+                        <button class="diente molar"
+                                data-diente="molar">
+
+                            <img src="imagenes/molar-removebg-preview.png"
+                                 alt="Molar inferior">
+
+                        </button>
+
+
+                        <!-- 15 -->
+
+                        <button class="diente molar"
+                                data-diente="molar">
+
+                            <img src="imagenes/molar-removebg-preview.png"
+                                 alt="Molar inferior">
+
+                        </button>
+
+
+                        <!-- 16 -->
+
+                        <button class="diente molar"
+                                data-diente="molar">
+
+                            <img src="imagenes/molar-removebg-preview.png"
+                                 alt="Molar inferior">
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LABIO INFERIOR -->
+
+                <div class="labio-inferior"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
